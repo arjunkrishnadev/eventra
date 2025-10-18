@@ -1,0 +1,371 @@
+/* ============================================================
+   Eventra | css file
+   ============================================================ */
+
+/* -------------------- GLOBAL STYLES -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff385c;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #443739;
+}
+
+.btn-primary {
+    background-color: #ff385c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #050505;
+}
+
+.btn-secondary {
+    background-color: #f6f1f1;
+    color: #ff385c;
+    border: 2px solid #ff385c;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #ff385c;
+    color: #0b0a0a;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero {
+    background: linear-gradient(to right, #5c3f44, #dea7b6);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-buttons a {
+    margin: 0 10px;
+}
+
+/* -------------------- SERVICES -------------------- */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.service-card p {
+    padding: 0 15px;
+    color: #555;
+}
+
+/* -------------------- AGENCIES -------------------- */
+.agency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.agency-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.agency-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.agency-info {
+    padding: 1rem;
+}
+
+.agency-info h3 {
+    color: #664249;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 1px solid #754d54;
+    color: #ff385c;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #ff385c;
+    color: white;
+}
+
+/* -------------------- HOW IT WORKS -------------------- */
+.how-it-works {
+    background-color: #fff5f7;
+    padding: 4rem 0;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.step-number {
+    background: #ff385c;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+/* -------------------- TESTIMONIALS -------------------- */
+.testimonial-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1 1 30%;
+}
+
+.testimonial-card h4 {
+    color: #ff385c;
+    margin-top: 1rem;
+}
+
+/* -------------------- PRICING -------------------- */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.price-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+.price-card.popular {
+    border: 2px solid #ff385c;
+}
+
+.price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #ff385c;
+}
+
+.price-card ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.price-card li {
+    padding: 5px 0;
+    color: #555;
+}
+
+/* -------------------- NEWSLETTER -------------------- */
+.newsletter {
+    background: #ff385c;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: #ff385c;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* -------------------- CONTACT -------------------- */
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* -------------------- FOOTER -------------------- */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.footer h3, .footer h4 {
+    color: #ff385c;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .service-grid, .agency-grid, .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+    }
+}
